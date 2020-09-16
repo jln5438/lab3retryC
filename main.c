@@ -16,7 +16,6 @@ int sum_n(int n){
     return sum_n(n-1)+n;
   }
 }
-
 void print_n(int n, const char *s){
   if(n==1){
     printf("%s\n",s);
@@ -26,7 +25,6 @@ void print_n(int n, const char *s){
     print_n(n-1,s);
   }
 }
-
 int main(void){
   int n=atoi(readline("Enter an int: "));
   int i=sum_n(n);
