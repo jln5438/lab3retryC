@@ -33,5 +33,4 @@ int main(void){
   printf("sum is %d.",i);
   const char *s=readline("Enter a string: ");
   print_n(n,s);
-
 }
