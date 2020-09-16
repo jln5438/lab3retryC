@@ -19,19 +19,19 @@ int sum_n(int n){
 
 void print_n(int n, const char *s){
   if(n==1){
-    printf("%s",s);
+    printf("%s\n",s);
   }
   else if(n!=0){
-    printf("%s",s);
+    printf("%s\n",s);
     print_n(n-1,s);
   }
 }
 
-int main(void) {
-  int n=(int)readline("Enter an int: ");
+int main(void){
+  int n=atoi(readline("Enter an int: "));
   int i=sum_n(n);
   printf("sum is %d.",i);
   const char *s=readline("Enter a string: ");
   print_n(n,s);
-  
+
 }
